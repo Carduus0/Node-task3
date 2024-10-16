@@ -1,0 +1,49 @@
+{
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "strict": false, // Отключить строгий режим
+    "noImplicitAny": false, // Разрешить неявный тип any
+    "strictNullChecks": false, // Можно отключить строгие проверки null
+    "strictFunctionTypes": false, // Можно сделать проверки типов функций менее строгими
+    "noUnusedLocals": false, // Не проверять неиспользуемые переменные
+    "noUnusedParameters": false, // Не проверять неиспользуемые параметры
+    "noImplicitReturns": false, // Отключить обязательное возвращение значений
+    "noFallthroughCasesInSwitch": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./src/*"
+      ]
+    },
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "ES6"
+    ]
+  },
+  "files": [
+    "src/index.ts"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
